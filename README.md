@@ -120,4 +120,6 @@ Download and install gazebo. You can go to the website : http://gazebosim.org/in
     ```
     roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start --Optimizer/GravitySigma 0.3 --Grid/Sensor 1 --Vis/CorGuessWinSize 60 --Odom/FilteringStrategy 0 --" depth_topic:=/camera/aligned_depth_to_color/image_raw rgb_topic:=/camera/color/image_raw camera_info_topic:=/camera/color/camera_info approx_sync:=false wait_imu_to_init:=true imu_topic:=/rtabmap/imu 
     ```
-    
+    ```
+    rosrun imu_filter_madgwick imu_filter_node _use_mag:=false _publish_tf:=false _world_frame:="enu" /imu/data_raw:=/camera/imu /imu/data:=/rtabmap/imu
+    ```
