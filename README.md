@@ -126,19 +126,16 @@ Download and install gazebo. You can go to the website : http://gazebosim.org/in
      ```
  2. **Map Save**
 
-
     a. Go to socut_slam, save the map (Orin)
     ```
-    
-rosrun map_server map_saver -f /home/orin/catkin_ws/src/scout_bringup/scout_slam/maps/map2 map:=/rtabmap/grid_map
+    rosrun map_server map_saver -f /home/orin/catkin_ws/src/scout_bringup/scout_slam/maps/map2 map:=/rtabmap/grid_map
 
     ```
  3. **Navigation**
  
   a. Navigation (Orin)
     ```
-    
-roslaunch scout_navigation scout_navigation.launch
+    roslaunch scout_navigation scout_navigation.launch
 
     ```
     
