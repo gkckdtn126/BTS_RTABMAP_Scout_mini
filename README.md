@@ -134,6 +134,8 @@ Download and install gazebo. You can go to the website : http://gazebosim.org/in
 
     a. Navigation (Orin)
     ```
-    roslaunch scout_navigation scout_navigation.launch
+    roslaunch rplidar_ros rplidar_s1.launch
+    roslaunch scout_localization ekf_filter_rtab.launch
+    roslaunch scout_navigation scout_navigation_rtab.launch
     ```
 
